@@ -1,0 +1,46 @@
+{
+  "id":"icx_score",
+  "version":"0.1.0",
+  "auth":{
+    "name":"Theloop Dev Team",
+    "email":"dev@theloop.co.kr",
+    "org":"Theloop inc"
+  },
+  "dependencies":{},
+  "description":"LoopChain ICX Coin Score",
+  "repository":{},
+  "homepage":"http://www.theloop.co.kr",
+  "function":{
+    "invoke":[
+        {
+            "method":"icx_init",
+            "params": {
+                "address":"string",
+                "value":"string",
+                "data":"string"
+            },
+            "description":"Initialize the account."
+        },
+        {
+            "method":"icx_sendTransaction",
+            "params": {
+                "from":"string",
+                "to":"string",
+                "value":"string",
+                "data":"string"
+            },
+            "description":"Creates new message call transaction."
+        }
+
+    ],
+    "query":[
+        {
+            "method":"icx_getBalance",
+            "params": ["string"],
+            "description":"Get the balance of address."
+        }
+    ]
+  },
+  "main": "icx_score",
+  "test": "test_icx_score"
+}
