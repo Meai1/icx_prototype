@@ -34,7 +34,7 @@ ICX 코인을 송신자 주소에서 수신자 주소로 이체한다.
    "params": {
 	    "from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155",
 	    "to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567",
-	    "value": "0x9184e72a", // 2441406250
+	    "value": "0x9184e72a", 
 	}
 }
 ```
@@ -68,7 +68,7 @@ ICX 주소의 잔고 금액을 조회한다.
 Example :
 ```JSON
 {
-	"jsonrpc": "2.0",
+    "jsonrpc": "2.0",
     "id": 123,
     "method": "icx_getBalance",
     "params": "0x0011223344556677889900112233445566778899"
